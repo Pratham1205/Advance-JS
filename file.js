@@ -104,7 +104,7 @@
 // (function(){
 //     console.log("I'm an IIFE");     // Immediately Invoked Function Expression
 // })();
-
+// We cant change order of execution of function in IIFE.
 
 
 // (()=>{
@@ -146,6 +146,78 @@
 //     console.log("Ended fucntion",n);
 // }
 // factorial(5);
+
+
+
+// function getRecursive(nr){
+//     console.log(nr);
+//     if(nr > 0){
+//         getRecursive(--nr);
+//     }
+// }
+// getRecursive(3);
+
+
+
+// function logRecursive(nr){
+//     console.log("Starting Function",nr);
+//     if(nr > 0){
+//         logRecursive(nr-1);
+//     }
+//     else{
+//         console.log("Done with recursion");
+//     }
+//     console.log("Ended Function",nr);
+// }
+// logRecursive(3);
+
+// However the performance of recursionis sloghtly worse than performance of rwgular ineration using a loop. SO it this causes a bottleneck situation that can cause performance issues.
+
+
+
+//                                         Nested Functions
+
+
+
+// function doOuterFunctionStuff(nr){
+//     console.log("Starting outer function");
+//     doInnerFunctionStuff(nr);
+//     function doInnerFunctionStuff(x){
+//         console.log(x+7)
+//         console.log("I can access outer var",nr);
+//     }
+// }
+// doOuterFunctionStuff(3);
+
+
+
+
+
+// Like passing in a fucntions as a parameter. This concept adds another abstract layer to coding. This concept is called callback.
+
+
+
+//                                             Function Callbacks
+
+// let fucntionVariable = function(){
+//     console.log("I'm a function variable");
+// }
+
+
+// function doFlexibleStuff(executeStuff){
+//     executeStuff();
+//     console.log("Inside doFlexibleStuff");
+// }
+
+// doFlexibleStuff(fucntionVariable);
+
+
+
+// let youGotThis = function () {
+//     console.log("You are doing really well, keep coding!");
+// }
+// setTimeout(youGotThis,2000);      // unit is in ms, it will print after X miliseconds
+// setInterval(youGotThis,1000);      // unit is in ms, it will print every X miliseconds
 
 
 
