@@ -40,7 +40,7 @@
 // console.log(firstName,lastName);
 
 
-// Alias creation
+//                                              Alias creation
 
 
 // const person = {
@@ -51,4 +51,42 @@
 // let{firstName:fn,lastName:ln} = person;
 // console.log(fn,ln);
 
+
+
+// let named = "GurukulTheSchool";
+
+// Destructuring
+// let[a1,a2,a3,a4,a5] = named;
+// console.log(a1,a2,a3,a4,a5);
+
+
+
+// const fruits = ["apple","banana","oranges","Mangos"];
+// //Destructuring
+// let{[0]:fruit1,[1]:fruit2} = fruits;
+// console.log(fruit1,fruit2);
+
+
+
+// let firstname = "John";
+// let lastname = "doe";
+// [firstname,lastname] = [lastname,firstname];
+// console.log(firstname,lastname);
+
+
+
+//                                    Java Exponentiation
+
+// let x = 5;
+// let z = x**2;
+// console.log(z);
+
+
+// const fruits = ["apple","banana","oranges","Mangos"];
+// let x = fruits.includes("Mangos",3)
+// console.log(x);
+
+
+// const arr = [1,2,34,25,45,43,4];
+// console.log(arr.length);
 
